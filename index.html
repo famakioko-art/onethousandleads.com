@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>One Thousand Leads — Dealflow That Prints Revenue</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Bebas+Neue&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --black: #080808;
+    --near-black: #0d0d0d;
+    --surface: #111111;
+    --surface-2: #161616;
+    --border: rgba(255,255,255,0.07);
+    --border-bright: rgba(255,255,255,0.15);
+    --gold: #C9A84C;
+    --gold-light: #E8C87A;
+    --gold-dim: rgba(201,168,76,0.15);
+    --white: #F5F0E8;
+    --white-dim: rgba(245,240,232,0.55);
+    --white-faint: rgba(245,240,232,0.12);
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--black);
+    color: var(--white);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    overflow-x: hidden;
+    cursor: default;
+  }
+
+  /* ── CUSTOM CURSOR ── */
+  .cursor {
+    width: 8px; height: 8px;
+    background: var(--gold);
+    border-radius: 50%;
+    position: fixed; top: 0; left: 0;
+    pointer-events: none; z-index: 9999;
+    transition: transform 0.1s ease;
+    mix-blend-mode: difference;
+  }
+  .cursor-ring {
+    width: 32px; height: 32px;
+    border: 1px solid var(--gold);
+    border-radius: 50%;
+    position: fixed; top: 0; left: 0;
+    pointer-events: none; z-index: 9998;
+    transition: transform 0.25s ease, width 0.2s, height 0.2s, opacity 0.2s;
+    opacity: 0.5;
+  }
+
+  /* ── NOISE OVERLAY ── */
+  body::before {
+    content: '';
+    position: fixed; inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+    opacity: 0.025;
+    pointer-events: none;
+    z-index: 1000;
+  }
+
+  /* ── TYPOGRAPHY ── */
+  .display { font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.02em; line-height: 0.95; }
+  .serif { font-family: 'Cormorant Garamond', serif; }
+  .label {
+    font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--gold); font-weight: 500;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 500;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 24px 48px;
+    backdrop-filter: blur(16px);
+    background: rgba(8,8,8,0.7);
+    border-bottom: 1px solid var(--border);
+    transition: padding 0.3s;
+  }
+  nav.scrolled { padding: 16px 48px; }
+  .nav-logo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px; letter-spacing: 0.12em;
+    color: var(--white); text-decoration: none;
+  }
+  .nav-logo span { color: var(--gold); }
+  .nav-links { display: flex; gap: 40px; list-style: none; }
+  .nav-links a {
+    font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase;
+    color: var(--white-dim); text-decoration: none;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-cta {
+    background: var(--gold); color: var(--black) !important;
+    padding: 10px 24px; border-radius: 2px;
+    font-weight: 500 !important; transition: background 0.2s !important;
+  }
+  .nav-cta:hover { background: var(--gold-light) !important; }
+  .nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+  .nav-hamburger span { width: 24px; height: 1px; background: var(--white); display: block; }
+
+  /* ── HERO ── */
+  #hero {
+    min-height: 100vh;
+    display: grid; place-items: center;
+    padding: 120px 48px 80px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-bg {
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse 80% 60% at 60% 40%, rgba(201,168,76,0.06) 0%, transparent 65%),
+                radial-gradient(ellipse 40% 40% at 10% 80%, rgba(201,168,76,0.04) 0%, transparent 60%);
+  }
+  .hero-grid {
+    position: absolute; inset: 0;
+    background-image: linear-gradient(var(--border) 1px, transparent 1px),
+                      linear-gradient(90deg, var(--border) 1px, transparent 1px);
+    background-size: 80px 80px;
+    mask-image: radial-gradient(ellipse 70% 70% at 50% 50%, black 30%, transparent 100%);
+  }
+  .hero-inner {
+    position: relative; z-index: 2;
+    max-width: 1100px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 420px; gap: 80px; align-items: center;
+  }
+  .hero-tag { margin-bottom: 24px; display: flex; align-items: center; gap: 12px; }
+  .hero-tag::before { content: ''; width: 40px; height: 1px; background: var(--gold); }
+  .hero-headline {
+    font-size: clamp(64px, 8vw, 112px);
+    line-height: 0.92;
+    margin-bottom: 32px;
+  }
+  .hero-headline em { color: var(--gold); font-style: italic; font-family: 'Cormorant Garamond', serif; font-weight: 300; }
+  .hero-sub {
+    font-size: 16px; line-height: 1.75;
+    color: var(--white-dim); max-width: 480px;
+    margin-bottom: 48px;
+  }
+  .hero-actions { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+  .btn-primary {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: var(--gold); color: var(--black);
+    padding: 16px 36px; font-size: 12px; letter-spacing: 0.15em;
+    text-transform: uppercase; font-weight: 500; text-decoration: none;
+    border-radius: 2px; transition: all 0.25s;
+  }
+  .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); }
+  .btn-secondary {
+    display: inline-flex; align-items: center; gap: 10px;
+    color: var(--white-dim); font-size: 12px; letter-spacing: 0.15em;
+    text-transform: uppercase; font-weight: 400; text-decoration: none;
+    border-bottom: 1px solid var(--border-bright); padding-bottom: 2px;
+    transition: all 0.25s;
+  }
+  .btn-secondary:hover { color: var(--gold); border-color: var(--gold); }
+  .hero-stats {
+    display: flex; flex-direction: column; gap: 1px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    border-radius: 4px; overflow: hidden;
+  }
+  .hero-stat {
+    padding: 28px 32px;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+  }
+  .hero-stat:last-child { border-bottom: none; }
+  .hero-stat .num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 48px; color: var(--gold); letter-spacing: 0.02em;
+    line-height: 1;
+  }
+  .hero-stat .desc { font-size: 12px; color: var(--white-dim); letter-spacing: 0.08em; margin-top: 4px; }
+  .hero-stat-line {
+    position: absolute; bottom: 0; left: 32px;
+    width: 40px; height: 2px; background: var(--gold);
+    transform: scaleX(0); transform-origin: left;
+    transition: transform 0.4s ease;
+  }
+  .hero-stat:hover .hero-stat-line { transform: scaleX(1); }
+
+  /* ── MARQUEE / SOCIAL PROOF ── */
+  .marquee-section {
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 20px 0; overflow: hidden;
+    background: var(--surface);
+  }
+  .marquee-track {
+    display: flex; gap: 0;
+    animation: marquee 30s linear infinite;
+    width: max-content;
+  }
+  .marquee-item {
+    display: flex; align-items: center; gap: 12px;
+    padding: 0 56px; white-space: nowrap;
+    font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--white-dim); text-decoration: none;
+    transition: color 0.2s;
+    border-right: 1px solid var(--border);
+  }
+  .marquee-item:hover { color: var(--gold); }
+  .marquee-dot { width: 4px; height: 4px; background: var(--gold); border-radius: 50%; }
+  @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+  /* ── LOGOS STRIP ── */
+  #logos {
+    padding: 80px 48px;
+    max-width: 1100px; margin: 0 auto;
+    text-align: center;
+  }
+  .logos-grid {
+    display: flex; gap: 2px; margin-top: 40px; flex-wrap: wrap; justify-content: center;
+  }
+  .logo-card {
+    flex: 1; min-width: 200px;
+    border: 1px solid var(--border);
+    padding: 28px 32px;
+    display: flex; flex-direction: column; align-items: flex-start; gap: 8px;
+    background: var(--surface);
+    text-decoration: none;
+    transition: all 0.25s; position: relative; overflow: hidden;
+  }
+  .logo-card::after {
+    content: ''; position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 2px; background: var(--gold);
+    transform: scaleX(0); transform-origin: left;
+    transition: transform 0.3s;
+  }
+  .logo-card:hover { background: var(--surface-2); border-color: var(--border-bright); }
+  .logo-card:hover::after { transform: scaleX(1); }
+  .logo-name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px; letter-spacing: 0.08em; color: var(--white);
+  }
+  .logo-tag { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--white-dim); }
+  .logo-arrow { margin-left: auto; align-self: center; color: var(--gold); font-size: 18px; opacity: 0; transition: opacity 0.2s; }
+  .logo-card:hover .logo-arrow { opacity: 1; }
+
+  /* ── SECTION COMMONS ── */
+  section { padding: 120px 48px; }
+  .section-inner { max-width: 1100px; margin: 0 auto; }
+  .section-header { margin-bottom: 72px; }
+  .section-header h2 { font-size: clamp(40px, 5vw, 64px); line-height: 0.95; margin-top: 16px; }
+
+  /* ── PILLARS ── */
+  #pillars { background: var(--surface); }
+  .pillars-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
+  .pillar {
+    padding: 56px 40px; background: var(--near-black);
+    border: 1px solid var(--border); position: relative;
+    overflow: hidden; transition: background 0.3s;
+  }
+  .pillar:hover { background: var(--surface-2); }
+  .pillar-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 72px; color: var(--gold-dim);
+    position: absolute; top: 24px; right: 24px;
+    line-height: 1; pointer-events: none;
+  }
+  .pillar-icon {
+    width: 48px; height: 48px; border-radius: 50%;
+    border: 1px solid var(--gold);
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 32px; font-size: 20px;
+  }
+  .pillar h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px; letter-spacing: 0.04em;
+    color: var(--white); margin-bottom: 8px;
+  }
+  .pillar .pillar-subtitle { font-size: 12px; color: var(--gold); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 20px; }
+  .pillar p { font-size: 14px; line-height: 1.8; color: var(--white-dim); }
+  .pillar-items { margin-top: 24px; display: flex; flex-direction: column; gap: 8px; }
+  .pillar-item { display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--white-dim); }
+  .pillar-item::before { content: ''; width: 16px; height: 1px; background: var(--gold); flex-shrink: 0; }
+
+  /* ── CASE STUDIES ── */
+  #cases { background: var(--black); }
+  .cases-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
+  .case-card {
+    background: var(--surface); border: 1px solid var(--border);
+    padding: 48px 40px; text-decoration: none;
+    transition: all 0.3s; position: relative; overflow: hidden;
+    display: flex; flex-direction: column;
+  }
+  .case-card::before {
+    content: ''; position: absolute;
+    inset: 0; background: radial-gradient(ellipse 60% 60% at 80% 20%, rgba(201,168,76,0.04) 0%, transparent 70%);
+    opacity: 0; transition: opacity 0.3s;
+  }
+  .case-card:hover::before { opacity: 1; }
+  .case-card:hover { border-color: var(--border-bright); }
+  .case-client { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; }
+  .case-client-name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px; letter-spacing: 0.06em; color: var(--white);
+  }
+  .case-badge {
+    font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase;
+    background: var(--gold-dim); color: var(--gold);
+    padding: 5px 10px; border-radius: 2px; border: 1px solid rgba(201,168,76,0.2);
+  }
+  .case-divider { width: 40px; height: 1px; background: var(--gold); margin-bottom: 24px; }
+  .case-desc { font-size: 14px; line-height: 1.8; color: var(--white-dim); margin-bottom: 32px; flex: 1; }
+  .case-metrics { display: flex; gap: 24px; flex-wrap: wrap; margin-bottom: 24px; }
+  .case-metric { display: flex; flex-direction: column; gap: 4px; }
+  .case-metric .val {
+    font-family: 'Bebas Neue', sans-serif; font-size: 32px;
+    color: var(--gold); letter-spacing: 0.02em;
+  }
+  .case-metric .key { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--white-dim); }
+  .case-link { font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); display: flex; align-items: center; gap: 6px; }
+
+  /* ── PROCESS ── */
+  #process { background: var(--surface); }
+  .process-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; margin-top: 0; position: relative; }
+  .process-steps::before {
+    content: ''; position: absolute;
+    top: 48px; left: 0; right: 0; height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    opacity: 0.3;
+  }
+  .process-step { padding: 40px 32px; border-right: 1px solid var(--border); border-top: 1px solid var(--border); }
+  .process-step:first-child { border-left: 1px solid var(--border); }
+  .step-num {
+    font-family: 'Bebas Neue', sans-serif; font-size: 56px;
+    color: var(--gold); opacity: 0.25; line-height: 1; margin-bottom: 16px;
+  }
+  .step-name {
+    font-family: 'Bebas Neue', sans-serif; font-size: 22px; letter-spacing: 0.06em;
+    color: var(--white); margin-bottom: 12px;
+  }
+  .step-desc { font-size: 13px; line-height: 1.75; color: var(--white-dim); }
+
+  /* ── OFFER ── */
+  #offer { background: var(--black); }
+  .offer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+  .offer-left h2 { font-size: clamp(36px, 4vw, 56px); line-height: 1.0; margin: 16px 0 24px; }
+  .offer-left p { font-size: 15px; line-height: 1.8; color: var(--white-dim); margin-bottom: 40px; }
+  .offer-cards { display: flex; flex-direction: column; gap: 2px; }
+  .offer-card {
+    background: var(--surface); border: 1px solid var(--border);
+    padding: 28px 32px; display: flex; align-items: flex-start; gap: 20px;
+    transition: border-color 0.25s, background 0.25s;
+    cursor: default;
+  }
+  .offer-card:hover { border-color: var(--border-bright); background: var(--surface-2); }
+  .offer-num {
+    font-family: 'Bebas Neue', sans-serif; font-size: 36px;
+    color: var(--gold); opacity: 0.4; min-width: 40px; line-height: 1;
+  }
+  .offer-card-body h4 {
+    font-family: 'Bebas Neue', sans-serif; font-size: 18px; letter-spacing: 0.06em;
+    color: var(--white); margin-bottom: 6px;
+  }
+  .offer-card-body p { font-size: 13px; color: var(--white-dim); line-height: 1.7; }
+
+  /* ── TESTIMONIALS ── */
+  #testimonials { background: var(--surface); }
+  .testimonials-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2px; margin-top: 0; }
+  .testi-card {
+    background: var(--near-black); border: 1px solid var(--border);
+    padding: 40px; position: relative;
+  }
+  .testi-quote {
+    font-family: 'Cormorant Garamond', serif; font-size: 22px;
+    font-style: italic; line-height: 1.6; color: var(--white);
+    margin-bottom: 28px;
+  }
+  .testi-stars { color: var(--gold); font-size: 14px; letter-spacing: 2px; margin-bottom: 24px; }
+  .testi-author { display: flex; flex-direction: column; gap: 4px; }
+  .testi-name { font-size: 13px; font-weight: 500; color: var(--white); letter-spacing: 0.08em; }
+  .testi-role { font-size: 11px; color: var(--gold); letter-spacing: 0.1em; text-transform: uppercase; }
+  .testi-marks {
+    position: absolute; top: 32px; right: 32px;
+    font-family: 'Cormorant Garamond', serif; font-size: 64px;
+    color: var(--gold); opacity: 0.1; line-height: 1;
+  }
+
+  /* ── CTA SECTION ── */
+  #cta {
+    background: var(--black);
+    text-align: center; padding: 160px 48px;
+    position: relative; overflow: hidden;
+  }
+  #cta::before {
+    content: ''; position: absolute; inset: 0;
+    background: radial-gradient(ellipse 80% 60% at 50% 50%, rgba(201,168,76,0.06) 0%, transparent 70%);
+  }
+  .cta-inner { position: relative; z-index: 2; max-width: 720px; margin: 0 auto; }
+  #cta .label { margin-bottom: 24px; }
+  #cta h2 {
+    font-family: 'Bebas Neue', sans-serif; font-size: clamp(48px, 7vw, 96px);
+    letter-spacing: 0.02em; line-height: 0.92; margin-bottom: 24px;
+  }
+  #cta h2 em { color: var(--gold); font-style: italic; font-family: 'Cormorant Garamond', serif; font-weight: 300; }
+  #cta p { font-size: 16px; line-height: 1.75; color: var(--white-dim); margin-bottom: 56px; }
+  .cta-actions { display: flex; gap: 16px; justify-content: center; align-items: center; flex-wrap: wrap; }
+  .btn-whatsapp {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: transparent; color: var(--white);
+    padding: 16px 36px; font-size: 12px; letter-spacing: 0.15em;
+    text-transform: uppercase; font-weight: 400; text-decoration: none;
+    border: 1px solid var(--border-bright); border-radius: 2px;
+    transition: all 0.25s;
+  }
+  .btn-whatsapp:hover { border-color: var(--gold); color: var(--gold); }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    padding: 64px 48px 40px;
+  }
+  .footer-inner { max-width: 1100px; margin: 0 auto; }
+  .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 56px; }
+  .footer-brand .brand-name {
+    font-family: 'Bebas Neue', sans-serif; font-size: 28px; letter-spacing: 0.12em;
+    color: var(--white); display: block; margin-bottom: 16px;
+  }
+  .footer-brand .brand-name span { color: var(--gold); }
+  .footer-brand p { font-size: 13px; line-height: 1.8; color: var(--white-dim); max-width: 280px; }
+  .footer-col h5 {
+    font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 20px;
+  }
+  .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .footer-col li a { font-size: 13px; color: var(--white-dim); text-decoration: none; transition: color 0.2s; }
+  .footer-col li a:hover { color: var(--gold); }
+  .footer-bottom {
+    border-top: 1px solid var(--border);
+    padding-top: 28px; display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 16px;
+  }
+  .footer-bottom p { font-size: 11px; color: var(--white-dim); letter-spacing: 0.08em; }
+
+  /* ── SCROLL REVEAL ── */
+  .reveal { opacity: 0; transform: translateY(32px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .reveal.visible { opacity: 1; transform: none; }
+  .reveal-delay-1 { transition-delay: 0.1s; }
+  .reveal-delay-2 { transition-delay: 0.2s; }
+  .reveal-delay-3 { transition-delay: 0.3s; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 1024px) {
+    .hero-inner { grid-template-columns: 1fr; }
+    .hero-stats { flex-direction: row; }
+    .hero-stat { flex: 1; }
+    .pillars-grid { grid-template-columns: 1fr 1fr; }
+    .cases-grid { grid-template-columns: 1fr; }
+    .footer-top { grid-template-columns: 1fr 1fr; }
+    .process-steps { grid-template-columns: 1fr 1fr; }
+    .process-step:nth-child(2) { border-left: 1px solid var(--border); }
+    .process-step:nth-child(3), .process-step:nth-child(4) { border-top: none; }
+  }
+  @media (max-width: 768px) {
+    nav { padding: 20px 24px; }
+    nav.scrolled { padding: 14px 24px; }
+    .nav-links { display: none; }
+    .nav-hamburger { display: flex; }
+    section { padding: 80px 24px; }
+    #hero { padding: 100px 24px 64px; }
+    .pillars-grid { grid-template-columns: 1fr; }
+    .offer-grid { grid-template-columns: 1fr; }
+    .testimonials-grid { grid-template-columns: 1fr; }
+    .process-steps { grid-template-columns: 1fr 1fr; }
+    .logos-grid { gap: 2px; }
+    .logo-card { min-width: 160px; }
+    footer { padding: 48px 24px 32px; }
+    .footer-top { grid-template-columns: 1fr 1fr; gap: 32px; }
+    #cta { padding: 100px 24px; }
+  }
+  @media (max-width: 480px) {
+    .footer-top { grid-template-columns: 1fr; }
+    .process-steps { grid-template-columns: 1fr; }
+    .process-step { border-left: 1px solid var(--border); }
+    .process-step:first-child { border-top: 1px solid var(--border); }
+    .cases-grid { grid-template-columns: 1fr; }
+    .hero-stats { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#" class="nav-logo">ONE <span>THOUSAND</span> LEADS</a>
+  <ul class="nav-links">
+    <li><a href="#pillars">Services</a></li>
+    <li><a href="#cases">Work</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#offer">Offer</a></li>
+    <li><a href="https://calendly.com/evans-onethousandleads/30min" target="_blank" class="nav-cta">Book a Call</a></li>
+  </ul>
+  <div class="nav-hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="label">Dealflow · Partnerships · Revenue</span>
+      </div>
+      <h1 class="display hero-headline reveal">
+        WE BUILD<br>DEALFLOW<br>THAT <em>PRINTS</em><br>REVENUE
+      </h1>
+      <p class="hero-sub reveal reveal-delay-1">
+        We help brands, deal platforms, and premium businesses generate qualified leads, high-value partnerships, and scalable revenue systems — not random traffic.
+      </p>
+      <div class="hero-actions reveal reveal-delay-2">
+        <a href="https://calendly.com/evans-onethousandleads/30min" target="_blank" class="btn-primary">
+          Book a Strategy Call
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#cases" class="btn-secondary">See Our Work</a>
+      </div>
+    </div>
+    <div class="hero-stats reveal reveal-delay-3">
+      <div class="hero-stat">
+        <div class="num">1000+</div>
+        <div class="desc">Qualified Leads Delivered</div>
+        <div class="hero-stat-line"></div>
+      </div>
+      <div class="hero-stat">
+        <div class="num">5★</div>
+        <div class="desc">Client Satisfaction</div>
+        <div class="hero-stat-line"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-section">
+  <div class="marquee-track">
+    <a href="https://madcourses.com" target="_blank" class="marquee-item"><span class="marquee-dot"></span>MAD Courses</a>
+    <a href="https://www.elysianminds.org/" target="_blank" class="marquee-item"><span class="marquee-dot"></span>Elysian Minds</a>
+    <a href="https://onethousandsolutions.store/" target="_blank" class="marquee-item"><span class="marquee-dot"></span>One Thousand Solutions</a>
+    <a href="https://madcourses.com" target="_blank" class="marquee-item"><span class="marquee-dot"></span>Education Brands</a>
+    <a href="#pillars" class="marquee-item"><span class="marquee-dot"></span>Dealflow Systems</a>
+    <a href="#pillars" class="marquee-item"><span class="marquee-dot"></span>Revenue Execution</a>
+    <a href="#pillars" class="marquee-item"><span class="marquee-dot"></span>Partnership Sourcing</a>
+    <!-- duplicate for seamless loop -->
+    <a href="https://madcourses.com" target="_blank" class="marquee-item"><span class="marquee-dot"></span>MAD Courses</a>
+    <a href="https://www.elysianminds.org/" target="_blank" class="marquee-item"><span class="marquee-dot"></span>Elysian Minds</a>
+    <a href="https://onethousandsolutions.store/" target="_blank" class="marquee-item"><span class="marquee-dot"></span>One Thousand Solutions</a>
+    <a href="https://madcourses.com" target="_blank" class="marquee-item"><span class="marquee-dot"></span>Education Brands</a>
+    <a href="#pillars" class="marquee-item"><span class="marquee-dot"></span>Dealflow Systems</a>
+    <a href="#pillars" class="marquee-item"><span class="marquee-dot"></span>Revenue Execution</a>
+    <a href="#pillars" class="marquee-item"><span class="marquee-dot"></span>Partnership Sourcing</a>
+  </div>
+</div>
+
+<!-- LOGOS / CLIENTS -->
+<div id="logos">
+  <div class="section-inner">
+    <p class="label" style="text-align:center;">Trusted By</p>
+    <div class="logos-grid">
+      <a href="https://madcourses.com" target="_blank" class="logo-card reveal">
+        <div class="logo-name">MAD COURSES</div>
+        <div class="logo-tag">Online Education & Filmmaking</div>
+        <span class="logo-arrow">↗</span>
+      </a>
+      <a href="https://www.elysianminds.org/" target="_blank" class="logo-card reveal reveal-delay-1">
+        <div class="logo-name">ELYSIAN MINDS</div>
+        <div class="logo-tag">Premium Coaching & Wellness</div>
+        <span class="logo-arrow">↗</span>
+      </a>
+      <a href="https://onethousandsolutions.store/" target="_blank" class="logo-card reveal reveal-delay-2">
+        <div class="logo-name">1K SOLUTIONS</div>
+        <div class="logo-tag">E-Commerce & Product Brands</div>
+        <span class="logo-arrow">↗</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- PILLARS -->
+<section id="pillars">
+  <div class="section-inner">
+    <div class="section-header">
+      <p class="label">What We Do</p>
+      <h2 class="display reveal">THREE PILLARS<br>OF EXECUTION</h2>
+    </div>
+    <div class="pillars-grid">
+      <div class="pillar reveal">
+        <div class="pillar-num">01</div>
+        <div class="pillar-icon">⚡</div>
+        <h3>Dealflow Systems</h3>
+        <div class="pillar-subtitle">Lead Generation & Pipeline</div>
+        <p>We build end-to-end outbound machines that identify, qualify, and deliver high-value leads into your pipeline — consistently, not randomly.</p>
+        <div class="pillar-items">
+          <div class="pillar-item">Targeted outbound campaigns</div>
+          <div class="pillar-item">ICP research & list building</div>
+          <div class="pillar-item">Pipeline tracking & optimization</div>
+          <div class="pillar-item">Multi-channel prospecting</div>
+        </div>
+      </div>
+      <div class="pillar reveal reveal-delay-1">
+        <div class="pillar-num">02</div>
+        <div class="pillar-icon">🤝</div>
+        <h3>Partnerships</h3>
+        <div class="pillar-subtitle">Strategic Alliances & Dealmaking</div>
+        <p>We identify, approach, and close strategic partnerships that expand your reach, distribution, and revenue — without burning through ad spend.</p>
+        <div class="pillar-items">
+          <div class="pillar-item">Strategic partner sourcing</div>
+          <div class="pillar-item">Warm introductions</div>
+          <div class="pillar-item">Deal structuring support</div>
+          <div class="pillar-item">Collaboration frameworks</div>
+        </div>
+      </div>
+      <div class="pillar reveal reveal-delay-2">
+        <div class="pillar-num">03</div>
+        <div class="pillar-icon">💰</div>
+        <h3>Revenue Execution</h3>
+        <div class="pillar-subtitle">Funnels, Closing & Monetization</div>
+        <p>Leads without conversion are just noise. We build the funnels, scripts, and closing support that turn conversations into contracted revenue.</p>
+        <div class="pillar-items">
+          <div class="pillar-item">High-converting funnel design</div>
+          <div class="pillar-item">Closing support & scripts</div>
+          <div class="pillar-item">Offer positioning</div>
+          <div class="pillar-item">Monthly revenue execution</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASE STUDIES -->
+<section id="cases">
+  <div class="section-inner">
+    <div class="section-header">
+      <p class="label">Case Studies</p>
+      <h2 class="display reveal">PROOF, NOT<br>PROMISES</h2>
+    </div>
+    <div class="cases-grid">
+      <a href="https://madcourses.com" target="_blank" class="case-card reveal">
+        <div class="case-client">
+          <div class="case-client-name">MAD COURSES</div>
+          <div class="case-badge">Education</div>
+        </div>
+        <div class="case-divider"></div>
+        <div class="case-desc">
+          Built a full outbound and partnership pipeline for an online education platform offering filmmaking courses, mentorship programs, and creative competitions. Generated consistent student acquisition through precision targeting and strategic brand outreach that positioned MAD Courses as an authority in creative education.
+        </div>
+        <div class="case-metrics">
+          <div class="case-metric">
+            <div class="val">3×</div>
+            <div class="key">Student Acquisition</div>
+          </div>
+          <div class="case-metric">
+            <div class="val">40+</div>
+            <div class="key">Qualified Leads / Mo</div>
+          </div>
+          <div class="case-metric">
+            <div class="val">12</div>
+            <div class="key">Partner Intros</div>
+          </div>
+        </div>
+        <div class="case-link">View Case Study ↗</div>
+      </a>
+
+      <a href="https://www.elysianminds.org/" target="_blank" class="case-card reveal reveal-delay-1">
+        <div class="case-client">
+          <div class="case-client-name">ELYSIAN MINDS</div>
+          <div class="case-badge">Coaching</div>
+        </div>
+        <div class="case-divider"></div>
+        <div class="case-desc">
+          Generated a steady flow of premium leads for high-ticket coaching and wellness programs. Repositioned the brand for high-net-worth client acquisition, established authority outreach sequences, and delivered qualified prospects pre-sold on the brand's premium positioning.
+        </div>
+        <div class="case-metrics">
+          <div class="case-metric">
+            <div class="val">25+</div>
+            <div class="key">Premium Leads / Mo</div>
+          </div>
+          <div class="case-metric">
+            <div class="val">$12K</div>
+            <div class="key">Avg. Deal Value</div>
+          </div>
+          <div class="case-metric">
+            <div class="val">2×</div>
+            <div class="key">Brand Positioning</div>
+          </div>
+        </div>
+        <div class="case-link">View Case Study ↗</div>
+      </a>
+
+      <a href="https://onethousandsolutions.store/" target="_blank" class="case-card reveal reveal-delay-1">
+        <div class="case-client">
+          <div class="case-client-name">1K SOLUTIONS</div>
+          <div class="case-badge">E-Commerce</div>
+        </div>
+        <div class="case-divider"></div>
+        <div class="case-desc">
+          Supported e-commerce growth through targeted lead systems, offer positioning, and B2B distribution partnerships. Built a foundation for scalable revenue operations and identified wholesale partnership channels that expanded the brand's reach beyond direct-to-consumer channels.
+        </div>
+        <div class="case-metrics">
+          <div class="case-metric">
+            <div class="val">8</div>
+            <div class="key">B2B Partnerships</div>
+          </div>
+          <div class="case-metric">
+            <div class="val">50+</div>
+            <div class="key">Qualified Inquiries</div>
+          </div>
+          <div class="case-metric">
+            <div class="val">35%</div>
+            <div class="key">Revenue Uplift</div>
+          </div>
+        </div>
+        <div class="case-link">View Case Study ↗</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="section-inner">
+    <div class="section-header">
+      <p class="label">Our Process</p>
+      <h2 class="display reveal">HOW WE BUILD<br>YOUR ENGINE</h2>
+    </div>
+    <div class="process-steps">
+      <div class="process-step reveal">
+        <div class="step-num">01</div>
+        <div class="step-name">AUDIT</div>
+        <div class="step-desc">We analyze your current pipeline, positioning, and revenue gaps. No assumptions — only data-backed clarity on what's broken and what's possible.</div>
+      </div>
+      <div class="process-step reveal reveal-delay-1">
+        <div class="step-num">02</div>
+        <div class="step-name">STRATEGY</div>
+        <div class="step-desc">We map the exact dealflow architecture for your business: who to target, which channels to activate, and what partnerships to pursue.</div>
+      </div>
+      <div class="process-step reveal reveal-delay-2">
+        <div class="step-num">03</div>
+        <div class="step-name">EXECUTION</div>
+        <div class="step-desc">We build and run the outbound system, partnerships, and funnels. You focus on closing. We keep the pipeline flowing.</div>
+      </div>
+      <div class="process-step reveal reveal-delay-3">
+        <div class="step-num">04</div>
+        <div class="step-name">SCALE</div>
+        <div class="step-desc">Once the system works, we scale what's working. More channels, more volume, more revenue — without adding complexity to your operations.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OFFER -->
+<section id="offer">
+  <div class="section-inner">
+    <div class="offer-grid">
+      <div class="offer-left">
+        <p class="label">The Offer</p>
+        <h2 class="display reveal">WHAT YOU<br>GET WITH US</h2>
+        <p class="reveal">This is not a retainer for someone to post on LinkedIn. This is a done-for-you revenue operation — built, run, and optimized by operators who understand dealflow.</p>
+        <a href="https://calendly.com/evans-onethousandleads/30min" target="_blank" class="btn-primary reveal">Start With a Free Audit</a>
+      </div>
+      <div class="offer-cards">
+        <div class="offer-card reveal">
+          <div class="offer-num">01</div>
+          <div class="offer-card-body">
+            <h4>Done-For-You Dealflow Engine</h4>
+            <p>We build your entire outbound infrastructure — ICP research, messaging, sequences, and tracking — and run it every month.</p>
+          </div>
+        </div>
+        <div class="offer-card reveal reveal-delay-1">
+          <div class="offer-num">02</div>
+          <div class="offer-card-body">
+            <h4>Outbound Systems Setup</h4>
+            <p>Full technical and strategic setup of multi-channel prospecting — LinkedIn, email, and direct outreach frameworks tailored to your audience.</p>
+          </div>
+        </div>
+        <div class="offer-card reveal reveal-delay-2">
+          <div class="offer-num">03</div>
+          <div class="offer-card-body">
+            <h4>Partnership Sourcing & Closing</h4>
+            <p>We identify, warm up, and close strategic partnerships that drive distribution, revenue, and brand authority in your category.</p>
+          </div>
+        </div>
+        <div class="offer-card reveal reveal-delay-3">
+          <div class="offer-num">04</div>
+          <div class="offer-card-body">
+            <h4>Monthly Revenue Execution</h4>
+            <p>Ongoing execution, reporting, and optimization. We track what closes, cut what doesn't, and double down on what moves revenue.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="section-inner">
+    <div class="section-header">
+      <p class="label">Client Feedback</p>
+      <h2 class="display reveal">RESULTS SPEAK<br>LOUDER</h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testi-card reveal">
+        <div class="testi-marks">"</div>
+        <div class="testi-stars">★★★★★</div>
+        <div class="testi-quote">One Thousand Leads transformed my LinkedIn presence and generated real, qualified meetings. The team understands what a serious pipeline looks like — and they deliver it.</div>
+        <div class="testi-author">
+          <div class="testi-name">Alfred Ngundo</div>
+          <div class="testi-role">Founder · Nairobi, Kenya</div>
+        </div>
+      </div>
+      <div class="testi-card reveal reveal-delay-1">
+        <div class="testi-marks">"</div>
+        <div class="testi-stars">★★★★★</div>
+        <div class="testi-quote">They helped me connect with decision-makers I couldn't reach on my own. My qualified leads increased significantly, and every interaction felt strategic — not spammy.</div>
+        <div class="testi-author">
+          <div class="testi-name">Amal Magzoub</div>
+          <div class="testi-role">Founder · Dubai, UAE</div>
+        </div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="testi-marks">"</div>
+        <div class="testi-stars">★★★★★</div>
+        <div class="testi-quote">Working with One Thousand Leads repositioned our brand and brought us the premium clients we were always capable of attracting. Worth every cent.</div>
+        <div class="testi-author">
+          <div class="testi-name">Daniel Nachmias</div>
+          <div class="testi-role">Elysian Minds</div>
+        </div>
+      </div>
+      <div class="testi-card reveal reveal-delay-1">
+        <div class="testi-marks">"</div>
+        <div class="testi-stars">★★★★★</div>
+        <div class="testi-quote">The outbound system One Thousand Leads set up was unlike anything we'd tried before — targeted, personal, and built for real conversations that convert.</div>
+        <div class="testi-author">
+          <div class="testi-name">Kamene John</div>
+          <div class="testi-role">One Thousand Solutions</div>
+        </div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="testi-marks">"</div>
+        <div class="testi-stars">★★★★★</div>
+        <div class="testi-quote">One Thousand Leads brought structure and precision to our student acquisition. Within weeks we had a consistent flow of genuinely interested filmmakers enrolling — the kind of growth we couldn't achieve on our own.</div>
+        <div class="testi-author">
+          <div class="testi-name">Tom Graham</div>
+          <div class="testi-role">MAD Courses</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta">
+  <div class="cta-inner">
+    <p class="label">Ready to Build?</p>
+    <h2 class="display">STOP CHASING<br>LEADS. BUILD A<br><em>SYSTEM</em></h2>
+    <p>The businesses that win in 2025 aren't spending more on ads. They're building dealflow engines that bring qualified opportunities consistently — on autopilot.</p>
+    <div class="cta-actions">
+      <a href="https://calendly.com/evans-onethousandleads/30min" target="_blank" class="btn-primary">
+        Book a Strategy Call
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="https://wa.me/254716278003" target="_blank" class="btn-whatsapp">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp Us
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="brand-name">ONE <span>THOUSAND</span> LEADS</span>
+        <p>We build dealflow systems, partnerships, and revenue execution engines for education brands, coaching businesses, e-commerce operators, and founders who want real results — not random traffic.</p>
+        <div style="margin-top:24px;display:flex;gap:16px;">
+          <a href="https://wa.me/254716278003" target="_blank" style="color:var(--gold);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;">+254716278003</a>
+        </div>
+        <div style="margin-top:8px;">
+          <a href="mailto:evans@onethousandleads.com" style="color:var(--white-dim);font-size:12px;text-decoration:none;">evans@onethousandleads.com</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#pillars">Dealflow Systems</a></li>
+          <li><a href="#pillars">Partnerships</a></li>
+          <li><a href="#pillars">Revenue Execution</a></li>
+          <li><a href="#offer">Our Offer</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Clients</h5>
+        <ul>
+          <li><a href="https://madcourses.com" target="_blank">MAD Courses</a></li>
+          <li><a href="https://www.elysianminds.org/" target="_blank">Elysian Minds</a></li>
+          <li><a href="https://onethousandsolutions.store/" target="_blank">1K Solutions</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="https://calendly.com/evans-onethousandleads/30min" target="_blank">Book a Call</a></li>
+          <li><a href="https://wa.me/254716278003" target="_blank">WhatsApp</a></li>
+          <li><a href="mailto:evans@onethousandleads.com">Email Us</a></li>
+          <li><a href="#cases">Case Studies</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 One Thousand Leads. All rights reserved. Dubai, UAE.</p>
+      <p style="color:var(--gold);letter-spacing:0.1em;">DEALFLOW · PARTNERSHIPS · REVENUE</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Custom cursor
+  const cursor = document.getElementById('cursor');
+  const ring = document.getElementById('cursorRing');
+  let mx = 0, my = 0, rx = 0, ry = 0;
+  document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
+  (function animateCursor() {
+    rx += (mx - rx) * 0.12; ry += (my - ry) * 0.12;
+    cursor.style.transform = `translate(${mx - 4}px, ${my - 4}px)`;
+    ring.style.transform = `translate(${rx - 16}px, ${ry - 16}px)`;
+    requestAnimationFrame(animateCursor);
+  })();
+  document.querySelectorAll('a, button').forEach(el => {
+    el.addEventListener('mouseenter', () => { ring.style.width = '48px'; ring.style.height = '48px'; ring.style.opacity = '1'; });
+    el.addEventListener('mouseleave', () => { ring.style.width = '32px'; ring.style.height = '32px'; ring.style.opacity = '0.5'; });
+  });
+
+  // Nav scroll
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.08 });
+  reveals.forEach(el => observer.observe(el));
+
+  // Mobile menu
+  function toggleMenu() {
+    const links = document.querySelector('.nav-links');
+    if (!links.style.display || links.style.display === 'none') {
+      links.style.display = 'flex';
+      links.style.flexDirection = 'column';
+      links.style.position = 'fixed';
+      links.style.top = '70px';
+      links.style.left = '0';
+      links.style.right = '0';
+      links.style.background = 'rgba(8,8,8,0.98)';
+      links.style.padding = '32px 24px';
+      links.style.gap = '24px';
+      links.style.borderBottom = '1px solid rgba(255,255,255,0.07)';
+      links.style.backdropFilter = 'blur(16px)';
+      links.style.zIndex = '499';
+    } else {
+      links.style.display = 'none';
+    }
+  }
+
+  // Hero entrance animation
+  window.addEventListener('load', () => {
+    document.querySelectorAll('.hero-content .reveal, .hero-stats.reveal').forEach((el, i) => {
+      setTimeout(() => el.classList.add('visible'), 200 + i * 150);
+    });
+  });
+</script>
+</body>
+</html>
